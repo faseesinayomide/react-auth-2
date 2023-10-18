@@ -67,7 +67,7 @@ const LandingPage  = () => {
 
           <ul className="grid-list">
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <RiPassValidLine className="text-6xl mb-3 text-[#63caff]" />
 
                 <h3 className=" font-semibold text-3xl mb-5">VALIDATION</h3>
@@ -79,7 +79,7 @@ const LandingPage  = () => {
             </li>
 
             <li>
-              <div className="promo-card bg-gray ">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg ">
                 <AiOutlineSetting className="text-6xl  mb-3 text-[#63caff] " />
 
                 <h3 className="font-semibold text-3xl mb-5">RECTIFICATION</h3>
@@ -92,7 +92,7 @@ const LandingPage  = () => {
               </div>
             </li>
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <div className="">
                   <IoMdSwap className="text-6xl mb-3 text-[#63caff]" />
                 </div>
@@ -107,7 +107,7 @@ const LandingPage  = () => {
               </div>
             </li>
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <div>
                   <PiCubeThin className="text-6xl mb-3 text-[#63caff]" />
                 </div>
@@ -123,7 +123,7 @@ const LandingPage  = () => {
             </li>
 
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <div className="">
                   <BiPurchaseTag className="text-6xl mb-3 text-[#63caff]" />
                 </div>
@@ -139,7 +139,7 @@ const LandingPage  = () => {
             </li>
 
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <div className="">
                   <TbArrowsTransferUp className="text-6xl mb-3 text-[#63caff]" />
                 </div>
@@ -155,7 +155,7 @@ const LandingPage  = () => {
             </li>
 
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <div className="">
                   <GiAutoRepair className="text-6xl mb-3 text-[#63caff]" />
                 </div>
@@ -171,7 +171,7 @@ const LandingPage  = () => {
             </li>
 
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <div className="">
                   <AiOutlineGift className="text-6xl mb-3 text-[#63caff]" />
                 </div>
@@ -186,7 +186,7 @@ const LandingPage  = () => {
               </div>
             </li>
             <li>
-              <div className="promo-card bg-gray">
+              <div className="promo-card border border-[#1bbcfc84] text-white shadow-lg">
                 <div className="">
                   <RiNftLine className="text-6xl mb-3 text-[#63caff]" />
                 </div>
