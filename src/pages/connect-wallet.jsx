@@ -32,23 +32,59 @@ import wallet28 from "../assets/wallets/images/Monarch-Wallet.png";
 import wallet29 from "../assets/wallets/images/download (3).png";
 import wallet30 from "../assets/wallets/images/wallet-connect.03da5e3f.svg";
 import wallet31 from "../assets/wallets/images/defi.png"
+import wallet32 from "../assets/images/632baf916109eec51607f996_public.png";
+
+
+const DATA = [
+  { id: 1, wallet: "Trust", logo: wallet1 },
+  { id: 2, wallet: "Metamask", logo: wallet2 },
+  { id: 3, wallet: "Coinbase", logo: wallet3 },
+  { id: 4, wallet: "Crypto.com", logo: wallet4 },
+  { id: 5, wallet: "Defi", logo: wallet31 },
+  { id: 32, wallet: "bifrost", logo: wallet32 },
+  { id: 6, wallet: "Nimiq", logo: wallet5 },
+  { id: 7, wallet: "Safepal", logo: wallet6 },
+  { id: 8, wallet: "Authereum", logo: wallet7 },
+  { id: 9, wallet: "Fint", logo: wallet8 },
+  { id: 10, wallet: "Nebulas", logo: wallet9 },
+  { id: 11, wallet: "Tomo", logo: wallet10 },
+  { id: 12, wallet: "Enjin", logo: wallet11 },
+  { id: 13, wallet: "Nimiq", logo: wallet12 },
+  { id: 14, wallet: "Parsiq", logo: wallet13 },
+  { id: 15, wallet: "Rainbow", logo: wallet14 },
+  { id: 16, wallet: "Wanchain", logo: wallet15 },
+  { id: 17, wallet: "Iotex", logo: wallet16 },
+  { id: 18, wallet: "Ethereum", logo: wallet17 },
+  { id: 19, wallet: "kin", logo: wallet18 },
+  { id: 20, wallet: "Rice", logo: wallet19 },
+  { id: 21, wallet: "Nami wallet", logo: wallet20 },
+  { id: 22, wallet: "Ledger live", logo: wallet21 },
+  { id: 23, wallet: "Bravos", logo: wallet22 },
+  { id: 24, wallet: "Nem", logo: wallet23 },
+  { id: 25, wallet: "pera Algo", logo: wallet24 },
+  { id: 26, wallet: "Digitex", logo: wallet25 },
+  { id: 27, wallet: "Argent", logo: wallet26 },
+  { id: 28, wallet: "Monarch", logo: wallet27 },
+  { id: 29, wallet: "Nimiq", logo: wallet28 },
+  { id: 30, wallet: "Cello", logo: wallet29 },
+  { id: 31, wallet: "Wallet Connect", logo: wallet30 },
+];
 
 
 const ConnectWallet = () => {
   return (
     <>
-
       <div className="text-center py-14 px-10">
         <img
           className="w-[60%] sm:w-[45%] md:w-[30%] lg:w-[30%] mx-auto  rounded-lg"
           src={walletimage}
           alt=""
         />
-        <h1 className="text-slate-50 text-6xl mb-8 font-semibold underline">
-          How it works ?
+        <h1 className="text-[#3a99fc] text-3xl md:text-6xl mb-8 font-semibold ">
+          How it works
         </h1>
 
-        <p className="text-slate-300 w-full sm:w-full md:w-[50%] lg:w-[50%] mx-auto text-[15px] leading-loose">
+        <p className="text-slate-300 w-full md:w-[60%] mx-auto text-[15px] leading-loose">
           {" "}
           Multiple iOS and Android wallets support the WalletConnect protocol.
           Interaction between mobile apps and mobile browsers are supported via
@@ -56,257 +92,26 @@ const ConnectWallet = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-3  sm:grid-cols-3 smmd:grid-cols-5 lg:grid-cols-6  gap-y-14 gap-x-24 px-10 container mx-auto py-[10%] ">
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" alt="" src={wallet1} />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Trust
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5 rounded-lg" src={wallet2} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Metamask
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5 rounded-lg" src={wallet3} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Coin base
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet4} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Crypto.com
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet31} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Defi
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet5} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              undefined
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet6} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Safepal
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet7} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Authereum
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet8} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Fint
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet9} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Nebulas
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet10} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Tomo
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet11} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Enjin
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet12} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Nimiq
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet13} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Parsiq
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet14} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Rainbow
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet15} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Wanchain
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet16} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Iotex
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5 rounded-lg" src={wallet17} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Ethereum
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet18} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              kin
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet19} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Rice
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet20} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Nami wallet
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet21} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Ledger live
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet22} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Bravos
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet23} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Nem
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet24} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              pera Algo
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet25} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Digitex
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet26} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center  ">
-              Exodus
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet27} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50 text-lg sm:text-lg md:text-xl lg:text-xl  text-center ">
-              Argent
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet28} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center  ">
-              Monarch
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet29} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center  ">
-              Cello
-            </h5>
-          </Link>
-        </div>
-        <div>
-          <Link to="/submit">
-            <img className="w-[90%] mb-5  rounded-lg" src={wallet30} alt="" />
-            <h5 className="hover:text-[#1bbdfc] text-slate-50  text-lg sm:text-lg md:text-xl lg:text-xl  text-center  ">
-              Wallet Connect
-            </h5>
-          </Link>
-        </div>
+      <div className="grid grid-cols-3   sm:grid-cols-3 smmd:grid-cols-5 lg:grid-cols-6  gap-y-20 gap-x-24 px-10 container mx-auto py-[10%] ">
+        {DATA.map((item) => {
+          return (
+            <Link className='hover:scale-105 transition-all' to="/submit">
+              <div className="" key={item.id}>
+                <img
+                  className="w-[100%] rounded-lg mb-5 "
+                  src={item.logo}
+                  alt=""
+                />
+                <div className="flex justify-center">
+                  <button className="  text-slate-50 text-[14px]">
+                    {item.wallet}
+                  </button>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
       </div>
-      <Outlet />
     </>
   );
 }
