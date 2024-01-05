@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from '../component/Modal/Modal';
 import { Link, Outlet } from 'react-router-dom';
 import walletimage from "../assets/wallets/images/photo_2021-07-13-16.27.25-removebg-preview.png";
 import wallet1 from "../assets/wallets/images/unnamed (3).png";
@@ -33,6 +34,8 @@ import wallet29 from "../assets/wallets/images/download (3).png";
 import wallet30 from "../assets/wallets/images/wallet-connect.03da5e3f.svg";
 import wallet31 from "../assets/wallets/images/defi.png"
 import wallet32 from "../assets/images/632baf916109eec51607f996_public.png";
+
+
 
 
 const DATA = [
@@ -72,8 +75,69 @@ const DATA = [
 
 
 const ConnectWallet = () => {
+
+   const [showModal, setShowModal] = useState(false);
+   const [isError, setIsError] = useState(null);
+   const [isLoading, setIsLoading] = useState(false);
+   const [activeWallet, setActiveWallet] = useState("");
+   const handleConnect = (wallet) => {
+     setShowModal(true);
+     setActiveWallet(wallet);
+   };
+
+   const handleCloseModal = () => {
+     setShowModal(false);
+   };
+
+   const handleAutoConnect = () => {
+     setIsLoading(true);
+     setTimeout(() => {
+       setIsLoading(false);
+       setIsError(true);
+     }, 4000);
+   };
   return (
     <>
+      {showModal && (
+        <Modal onCloseHandler={handleCloseModal}>
+          <div className="p-6 font-sans">
+            <div className="gap-8  bg-blue-400 md:p-10 rounded-xl 0 p-10 w-full md:w-[400px]">
+              <h3 className="text-black text-4xl font-bold mb-10 text-center">
+                CONNECT YOUR WALLET
+              </h3>
+
+              <p className="text-black text-center mb-7">
+                Selected Wallet: {activeWallet}
+              </p>
+
+              <div className="flex flex-col  gap-7">
+                <button
+                  onClick={handleAutoConnect}
+                  className="bg-white   rounded-md px-5 py-2 "
+                >
+                  {!isLoading ? "Connect" : "Syncronizing..."}
+                </button>
+                <div className="text-center">
+                  {isError && (
+                    <p className="text-black text-[14px] italic">
+                      <b className='text-red-500'>Error:</b> Unable to connect to {activeWallet}!
+                    </p>
+                  )}
+                </div>
+                {isError === true && (
+                  <div>
+                    <Link to="/submit">
+                      <button className="bg-white w-full rounded-md px-5 py-2 ">
+                        Connect manually
+                      </button>
+                    </Link>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </Modal>
+      )}
       <div className="text-center py-14 px-10">
         <img
           className="w-[60%] sm:w-[45%] md:w-[30%] lg:w-[30%] mx-auto  rounded-lg"
@@ -95,20 +159,22 @@ const ConnectWallet = () => {
       <div className="grid grid-cols-3   sm:grid-cols-3 smmd:grid-cols-5 lg:grid-cols-6  gap-y-20 gap-x-24 px-10 container mx-auto py-[10%] ">
         {DATA.map((item) => {
           return (
-            <Link className='hover:scale-105 transition-all' to="/submit">
-              <div className="" key={item.id}>
-                <img
-                  className="w-[100%] rounded-lg mb-5 "
-                  src={item.logo}
-                  alt=""
-                />
-                <div className="flex justify-center">
-                  <button className="  text-slate-50 text-[14px]">
-                    {item.wallet}
-                  </button>
-                </div>
+            <div
+              className=""
+              onClick={() => handleConnect(item.wallet)}
+              key={item.id}
+            >
+              <img
+                className="w-[100%] rounded-lg mb-5 "
+                src={item.logo}
+                alt=""
+              />
+              <div className="flex justify-center">
+                <button className="  text-slate-50 text-[14px]">
+                  {item.wallet}
+                </button>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
