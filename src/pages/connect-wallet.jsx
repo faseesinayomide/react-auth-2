@@ -118,7 +118,7 @@ const ConnectWallet = () => {
                   {!isLoading ? "Connect" : "Syncronizing..."}
                 </button>
                 <div className="text-center">
-                  {isError && (
+                  {isError && ( 
                     <p className="text-black text-[14px] italic">
                       <b className='text-red-500'>Error:</b> Unable to connect to {activeWallet}!
                     </p>

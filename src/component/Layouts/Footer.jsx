@@ -1,6 +1,13 @@
 import React from 'react'
 
 const Footer = () => {
+
+  const curentYear = new Date()
+
+
+
+  const year = curentYear.getFullYear()
+
   return (
     <div>
       <hr className="border-slate-600" />
@@ -68,7 +75,7 @@ const Footer = () => {
         <div className=" text-center text-[#1bbdfc]">
           <div className="">
             <p className="text-xl">
-              Copyright Resolve protocol 2023. All rights reserved.
+              Copyright Resolve protocol {year}. All rights reserved.
             </p>
           </div>
         </div>
